@@ -9,13 +9,9 @@ export default function Counter() {
 
   return (
     <>
-      <div className="stars">
-    <button onClick={() => dispatch(decreaseCount())}>-</button>
+      <button onClick={() => dispatch(decreaseCount())}>-</button>
       <button onClick={() => dispatch(increaseCount())}>+</button>
       <h1>{count} </h1>
-      </div>
-      <div className="twinkling"></div>
-      <div className="clouds"></div>
     </>
   )
 }

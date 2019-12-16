@@ -1,0 +1,25 @@
+.front {
+  position: relative;
+}
+
+.introduction {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50%;
+  Width: 100%;
+}
+
+.highlightedName {
+  color: #42BCF3;
+}
+
+.learnMore {
+  color: #42BCF3;
+}
+
+.backgroundImage {
+  position: absolute;
+  Width: 100%;
+  left: 0;
+  top: 0;
+}
