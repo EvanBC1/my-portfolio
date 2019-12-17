@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {createStore} from "redux";
+import {Provider} from 'react-redux'
+import allReducers from "./reducers/combiner";
 import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Counter from "./components/counter";
+import Intro from "./components/intro";
+import About from "./components/about";
+import NavBar from './components/navBar';
+import Project from "./components/project";
+import Contact from './components/contact'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(
+  allReducers,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+);
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(
+  <Provider store={store}>
+    <Intro />
+    <NavBar/>
+    <About />
+    <Project />
+    <Contact/>
+  </Provider>,
+  document.getElementById('root'));
