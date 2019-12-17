@@ -1,6 +1,5 @@
 import React from "react";
 import Button from '@material-ui/core/Button';
-import { Link, animateScroll as scroll } from "react-scroll";
 import Sky from '../assets/diego-ph-5LOhydOtTKU-unsplash.jpg';
 import '../style/intro.css';
 import github from '../assets/GitHub-Mark-64px.png'
@@ -23,10 +22,10 @@ export default function Intro () {
         </div>
 
         <div className='logosDiv'>
-          <a href="https://github.com/EvanBC1">
+          <a href="wss://github.com/EvanBC1">
           <img className='logos' src={github} alt="github link" />
           </a>
-            <a href="https://www.linkedin.com/in/evan-brecht-curry/">
+            <a href="wss://www.linkedin.com/in/evan-brecht-curry/">
           <img className='logos' src={linkedIn} alt="linked link" />
             </a>
         </div>
