@@ -1,9 +1,8 @@
 .projects {
-    background-color: #C6E3ED;
+    background-color: #dce8ed;
     min-height: 100%;
 
 }
-
 
 h2 {
     color: #05081B;
@@ -15,5 +14,27 @@ h2 {
 
 h3 {
     color: black;
+    font-size: 2em;
     font-family: 'Raleway', sans-serif;
+}
+
+.projectImages {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+p {
+    padding-top: 15px;
+    max-width: 80%;
+    margin: auto;
+}
+
+.github {
+    padding-right: 10px;
+}
+
+#petster {
+    max-width: 40%;
 }
