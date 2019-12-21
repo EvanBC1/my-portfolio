@@ -12,3 +12,7 @@ html {
 html, body, #root {
     height: 100%;
 }
+
+p {
+    font-family: 'Raleway', sans-serif;
+}

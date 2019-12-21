@@ -9,7 +9,7 @@ export default function About () {
       <div id='about' className='about'>
         <h2>About <br/> ━━</h2>
         <img className='me' src={me} alt="picture of me" />
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <p>I am a Software Engineer with a background in project management and analytics based out of Seattle, Washington. I am passionate about using bleeding-edge technology to build tools that contribute to the long term success of humanity on earth and in space.</p>
       </div>
     </>
   )
