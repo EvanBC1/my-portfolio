@@ -52,7 +52,7 @@ export default function Projects () {
       <Button variant="outlined" color="primary" href='https://github.com/401-heeded/Heeded-Final-App'>
         GitHub Repo
       </Button>
-      <p>Description</p>-
+      <p>Heeded allows user to measure the engagement of their audience to better understand the impact of their speeches. Heeded was built to be used on a raspberry pi with a webcam and uses the following technologies: Node.js, AWS Cognito, AWS S3, and, AWS Rekognition</p>-
     </div>
       </>
   )

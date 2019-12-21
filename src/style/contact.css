@@ -1,3 +1,23 @@
 #contact {
     color: #C6E3ED;
+    margin-bottom: 0;
+}
+
+.logosDiv2 {
+    bottom: 5%;
+}
+
+.logos2 {
+    max-width: 48px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#contactText {
+    color: #42BCF3;
+    padding-bottom: 100px;
+}
+
+#myName {
+    color: white;
 }
