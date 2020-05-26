@@ -19,11 +19,13 @@ h2 {
 
 .me {
     width: 30%;
+    min-width: 400px;
 }
 
 p {
     color: #05081B;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 0;
+    max-width: 40em;
     padding-bottom: 40px;
 }

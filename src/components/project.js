@@ -15,6 +15,7 @@ import CaseHawk from '../assets/caseHawk.png'
 
 const useStyles = makeStyles({
   card: {
+    width: '90%',
     maxWidth: 600,
   },
   media: {
@@ -27,7 +28,7 @@ export default function Projects () {
 
   return (
     <>
-      <div className='projectsDiv'>
+      <div className='projectsDiv' id="projects">
         <h2>Projects <br/> ━━━</h2>
 
         <div id="petster" className='projects'>
@@ -85,8 +86,6 @@ export default function Projects () {
             </CardActions>
           </Card>
         </div>
-
-
 
         <div id="caseHawk" className='projects'>
           <Card className={classes.card}>
