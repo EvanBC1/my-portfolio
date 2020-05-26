@@ -1,7 +1,6 @@
-.projects {
+.projectsDiv {
     background-color: #dce8ed;
     min-height: 100%;
-
 }
 
 h2 {
@@ -21,14 +20,13 @@ h3 {
 .projectImages {
     display: block;
     max-width: 80%;
-    height: 25em;
+    height: 50em;
     margin: auto;
     padding-bottom: 15px;
 }
 
 p {
     padding-top: 15px;
-    max-width: 80%;
     margin: auto;
 }
 
@@ -36,6 +34,28 @@ p {
     padding-right: 10px;
 }
 
-#petster {
-    /*max-width: 40%;*/
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+}
+#petsterImage {
+    height: 50em;
+    margin: auto;
+    padding-bottom: 0px;
+    width: 28em;
+}
+
+#sortingVisualizerImage {
+    height: 34em;
+    margin: auto;
+    width: 50em;
+}
+
+#caseHawkImage{
+    height: 40em;
+    margin: auto;
+    padding-bottom: 0px;
+    width: 40em;
 }
