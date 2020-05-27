@@ -48,14 +48,16 @@ p {
 }
 
 #sortingVisualizerImage {
-    height: 34em;
+    width: 95%;
     margin: auto;
-    width: 50em;
+    max-height: 34em;
+    max-width: 50em;
 }
 
 #caseHawkImage{
-    height: 40em;
+
     margin: auto;
     padding-bottom: 0px;
-    width: 40em;
+    max-height: 40em;
+    max-width: 40em;
 }
