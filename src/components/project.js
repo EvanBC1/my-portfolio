@@ -48,12 +48,12 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary" href='https://github.com/petster-app'>
+            <CardActions style={{justifyContent: 'center'}}>
+              <Button variant="contained" size="medium" color="primary"  href='https://github.com/petster-app'>
                 GitHub Repo
               </Button>
-              <Button size="small"  color="secondary" href='https://play.google.com/store/apps/details?id=com.lilvan.petster'>
-                Live Version on Google Play
+              <Button variant="contained" size="medium"  color="secondary" href='https://play.google.com/store/apps/details?id=com.lilvan.petster'>
+                Live Version
               </Button>
             </CardActions>
           </Card>
@@ -76,11 +76,11 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary" href='https://github.com/EvanBC1/Sorting-Visualizer'>
+            <CardActions style={{justifyContent: 'center'}}>
+              <Button variant="contained" size="medium" color="primary" className="button" href='https://github.com/EvanBC1/Sorting-Visualizer'>
                 GitHub Repo
               </Button>
-              <Button size="small"  color="secondary" href='https://evans-sorting-visualizer.herokuapp.com/'>
+              <Button variant="contained" size="medium"  color="secondary" className="button" href='https://evans-sorting-visualizer.herokuapp.com/'>
                 Live Version
               </Button>
             </CardActions>
@@ -104,8 +104,8 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary" href='https://github.com/JS-401-Final'>
+            <CardActions style={{justifyContent: 'center'}}>
+              <Button variant="contained" size="medium" color="primary" href='https://github.com/JS-401-Final'>
                 GitHub Repo
               </Button>
             </CardActions>
@@ -129,8 +129,8 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions>
-              <Button size="small" color="primary" href='https://github.com/401-heeded/Heeded-Final-App'>
+            <CardActions style={{justifyContent: 'center'}}>
+              <Button variant="contained" size="medium" color="primary" href='https://github.com/401-heeded/Heeded-Final-App'>
                 GitHub Repo
               </Button>
             </CardActions>
