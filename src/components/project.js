@@ -15,7 +15,7 @@ import CaseHawk from '../assets/caseHawk.png'
 
 const useStyles = makeStyles({
   card: {
-    width: '90%',
+    width: '95%',
     maxWidth: 600,
   },
   media: {
