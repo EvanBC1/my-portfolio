@@ -15,7 +15,7 @@ import CaseHawk from '../assets/caseHawk.png'
 
 const useStyles = makeStyles({
   card: {
-    width: '90%',
+    width: '95%',
     maxWidth: 600,
   },
   media: {
@@ -43,7 +43,7 @@ export default function Projects () {
                 <Typography gutterBottom variant="h5" component="h2">
                   Petster
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" style={{fontSize: "1.5em"}}>
                   Petster is an animal adoption app on the Google Play store that helps you find a new member of your family. Petster uses the pet finder API to allow you to quickly swipe through potential pets with a streamlined UI.
                 </Typography>
               </CardContent>
@@ -71,7 +71,7 @@ export default function Projects () {
                 <Typography gutterBottom variant="h5" component="h2">
                   Sorting Visualizer
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" style={{fontSize: "1.5em"}}>
                   The sorting visualizer is something i created to show a step by step look of how sorting algorithms step by step. Currently it can bubble sort and selection sort and I have plans to add additional sort types in the future. It is built in React and uses Redux
                 </Typography>
               </CardContent>
@@ -99,7 +99,7 @@ export default function Projects () {
                 <Typography gutterBottom variant="h5" component="h2">
                   Case Hawk
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" style={{fontSize: "1.5em"}}>
                   Case Hawk is a legal case management app built for a local law firm. Case Hawk was built using React, Redux, Prisma, and Google Authentication.
                 </Typography>
               </CardContent>
@@ -124,7 +124,7 @@ export default function Projects () {
                 <Typography gutterBottom variant="h5" component="h2">
                   Heeded
                 </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
+                <Typography variant="body2" color="textSecondary" component="p" style={{fontSize: "1.5em"}}>
                   Heeded allows user to measure the engagement of their audience to better understand the impact of their speeches. Heeded was built to be used on a raspberry pi with a webcam and uses the following technologies: Node.js, AWS Cognito, AWS S3, and, AWS Rekognition
                 </Typography>
               </CardContent>
