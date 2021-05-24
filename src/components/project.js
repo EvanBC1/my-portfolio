@@ -62,9 +62,6 @@ export default function Projects () {
               <Button variant="contained" size="medium"  color="secondary" href='https://play.google.com/store/apps/details?id=com.lilvan.petster'>
                 Live Version
               </Button>
-              <Button variant="contained" size="medium"  color="secondary" onClick={routeChange}>
-                 Cards
-              </Button>
             </CardActions>
           </Card>
         </div>

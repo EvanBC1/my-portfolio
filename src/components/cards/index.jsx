@@ -10,16 +10,28 @@ const Cards = () => {
   const [currentPlayer, setCurrentPlayer] = useState();
   const [players, setPlayers] = useState([]);
   const [gameStarted, setGameStarted] = useState(false);
-
+console.log(gameStarted)
   const newDeck = () => {
     count = 0;
     currentDeck = CardRandomizer();
     setCurrentCard(currentDeck[0]);
     setGameStarted(true);
   };
+
+  const reset = () => {
+    setCurrentCard();
+    setCurrentPlayer();
+    setPlayers([]);
+    setGameStarted(false);
+  }
+
   const nextCard = () => {
+    if (count > 50) {
+      reset();
+    } else {
     count++;
     setCurrentCard(currentDeck[count]);
+    }
   };
 
   function importAll(r) {
@@ -45,6 +57,14 @@ const Cards = () => {
 
   return (
     <div style={{ height: "100%", backgroundColor: "white" }}>
+      {!gameStarted &&
+      <div>
+      <span style={{color: 'black'}}>Players: </span>
+      {players.map(player =>  
+        <span
+        style={{color: 'black'}}
+        >{player}   </span>
+      )}
       <form noValidate autoComplete="off">
         <TextField
           style={{ marginTop: "2vh" }}
@@ -64,7 +84,7 @@ const Cards = () => {
       >
         Add Player
       </Button>
-      <form noValidate autoComplete="off">git
+      <form noValidate autoComplete="off">
       </form>
       <Button
         style={{ marginTop: "2vh" }}
@@ -75,20 +95,28 @@ const Cards = () => {
       >
         New Deck
       </Button>
+      </div>
+}
+      <Button
+        style={{ marginTop: "2vh" }}
+        variant="contained"
+        size="medium"
+        color="primary"
+        onClick={reset}
+      >
+Reset      
+</Button>
       {gameStarted &&
-      <p>Card #{count + 1} - {players[count % players.length]}</p>
+      <p>Card #{count + 1} - Player: {players[count % players.length]}</p>
 }
       {currentCard && (
         <img
           alt="playing card"
-          style={{ marginTop: "2vh", height: "60vh" }}
+          style={{ height: "60vh" }}
           src={images[`${currentCard}.png`]}
           onClick={nextCard}
         />
       )}
-      {players.map((player) => (
-        <p>{player}</p>
-      ))}
     </div>
   );
 };
