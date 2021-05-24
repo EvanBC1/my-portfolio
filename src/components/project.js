@@ -48,7 +48,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary"  href='https://github.com/petster-app'>
                 GitHub Repo
               </Button>
@@ -76,7 +76,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" className="button" href='https://github.com/EvanBC1/Sorting-Visualizer'>
                 GitHub Repo
               </Button>
@@ -104,7 +104,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" href='https://github.com/JS-401-Final'>
                 GitHub Repo
               </Button>
@@ -129,7 +129,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" href='https://github.com/401-heeded/Heeded-Final-App'>
                 GitHub Repo
               </Button>
