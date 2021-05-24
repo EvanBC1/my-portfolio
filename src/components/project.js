@@ -12,6 +12,7 @@ import SortingVisualizer from '../assets/Sorting Visualizer.png'
 import Petster from '../assets/petster.jpg'
 import Heeded from '../assets/heeded.png'
 import CaseHawk from '../assets/caseHawk.png'
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   card: {
@@ -25,6 +26,12 @@ const useStyles = makeStyles({
 
 export default function Projects () {
   const classes = useStyles();
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = '/Cards'; 
+    history.push(path);
+  }
 
   return (
     <>
@@ -48,12 +55,15 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary"  href='https://github.com/petster-app'>
                 GitHub Repo
               </Button>
               <Button variant="contained" size="medium"  color="secondary" href='https://play.google.com/store/apps/details?id=com.lilvan.petster'>
                 Live Version
+              </Button>
+              <Button variant="contained" size="medium"  color="secondary" onClick={routeChange}>
+                 Cards
               </Button>
             </CardActions>
           </Card>
@@ -76,7 +86,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" className="button" href='https://github.com/EvanBC1/Sorting-Visualizer'>
                 GitHub Repo
               </Button>
@@ -104,7 +114,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" href='https://github.com/JS-401-Final'>
                 GitHub Repo
               </Button>
@@ -129,7 +139,7 @@ export default function Projects () {
                 </Typography>
               </CardContent>
             </CardActionArea>
-            <CardActions style={{justifyContent: 'center'}}>
+            <CardActions style={{marginBottom: '20px', justifyContent: 'center'}}>
               <Button variant="contained" size="medium" color="primary" href='https://github.com/401-heeded/Heeded-Final-App'>
                 GitHub Repo
               </Button>
