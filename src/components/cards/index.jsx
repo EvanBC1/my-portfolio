@@ -36,6 +36,7 @@ console.log(gameStarted)
 
   function importAll(r) {
     let images = {};
+    // eslint-disable-next-line array-callback-return
     r.keys().map((item, index) => {
       images[item.replace("./", "")] = r(item);
     });
