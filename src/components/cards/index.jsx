@@ -64,7 +64,7 @@ console.log(gameStarted)
       {players.map(player =>  
         <span
         style={{color: 'black'}}
-        >{player}   </span>
+        >{player} - </span>
       )}
       <form noValidate autoComplete="off">
         <TextField

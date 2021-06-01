@@ -12,6 +12,7 @@ import SortingVisualizer from '../assets/Sorting Visualizer.png'
 import Petster from '../assets/petster.jpg'
 import Heeded from '../assets/heeded.png'
 import CaseHawk from '../assets/caseHawk.png'
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   card: {
@@ -25,6 +26,12 @@ const useStyles = makeStyles({
 
 export default function Projects () {
   const classes = useStyles();
+  const history = useHistory();
+
+  const routeChange = () =>{ 
+    let path = '/Cards'; 
+    history.push(path);
+  }
 
   return (
     <>
@@ -54,6 +61,9 @@ export default function Projects () {
               </Button>
               <Button variant="contained" size="medium"  color="secondary" href='https://play.google.com/store/apps/details?id=com.lilvan.petster'>
                 Live Version
+              </Button>
+              <Button variant="contained" size="medium"  color="secondary" onClick={routeChange}>
+                 Cards
               </Button>
             </CardActions>
           </Card>
